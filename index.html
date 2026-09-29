@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -62,29 +62,29 @@
     <main>
       <section class="hero container" id="home" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-line"></span> BCA Student <span aria-hidden="true">•</span> Front-End Developer</p>
-<h1 id="hero-title" class="text-reveal">
-  <span id="name-line-1"></span>
-  <span id="name-line-2"></span>
-</h1>
+          <p class="eyebrow hero-seq" style="--seq: 0"><span class="eyebrow-line"></span> BCA Student <span aria-hidden="true">•</span> Front-End Developer</p>
+          <h1 id="hero-title" aria-label="Mohammed Umar">
+            <span class="hero-name-line" aria-hidden="true">MOHAMMED</span>
+            <span class="hero-name-line" aria-hidden="true">UMAR</span>
+          </h1>
 
-          <p class="hero-role">
+          <p class="hero-role hero-seq" style="--seq: 1">
             FRONT-END DEVELOPER<br />
             <span>PYTHON DJANGO DEVELOPER</span>
           </p>
 
-          <p class="hero-lede">
+          <p class="hero-lede hero-seq" style="--seq: 2">
             I build responsive, user-focused web experiences and practical applications using modern
             front-end technologies, Python and Django, while exploring data analytics and machine learning.
           </p>
 
-          <div class="hero-actions">
+          <div class="hero-actions hero-seq" style="--seq: 3">
             <a class="button button-primary" href="#projects">View My Work</a>
             <a class="button button-secondary" href="assets/Mohammed-Umar-Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
             <a class="button button-ghost" href="#contact">Let's Connect</a>
           </div>
 
-          <div class="hero-badges" aria-label="Core focus areas">
+          <div class="hero-badges hero-seq" style="--seq: 4" aria-label="Core focus areas">
             <span>WEB DEVELOPMENT</span>
             <span>PYTHON</span>
             <span>DATA</span>
@@ -238,6 +238,26 @@
         </div>
       </section>
 
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-row">
+          <span>Front-End</span><i>&#10022;</i>
+          <span>Python</span><i>&#10022;</i>
+          <span>Django</span><i>&#10022;</i>
+          <span>Data Analytics</span><i>&#10022;</i>
+          <span>Machine Learning</span><i>&#10022;</i>
+          <span>Responsive Design</span><i>&#10022;</i>
+        </div>
+        <div class="marquee-row marquee-row-alt">
+          <span>HTML</span><i>&#10022;</i>
+          <span>CSS</span><i>&#10022;</i>
+          <span>JavaScript</span><i>&#10022;</i>
+          <span>Pandas</span><i>&#10022;</i>
+          <span>NumPy</span><i>&#10022;</i>
+          <span>Streamlit</span><i>&#10022;</i>
+          <span>Git</span><i>&#10022;</i>
+        </div>
+      </div>
+
       <section class="projects section container" id="projects" aria-labelledby="projects-title">
         <div class="section-heading reveal">
           <p class="section-kicker">03 / SELECTED WORK</p>
@@ -281,40 +301,16 @@
               </div>
               <div class="project-links">
                 <a href="#contact">Ask about project <span>↗</span></a>
-                <a href="#contact">GitHub on request <span>↗</span></a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="data python">
-            <div class="project-visual visual-student" aria-label="Student performance dashboard visual mockup">
-              <span class="project-tag">PROJECT 02</span>
-              <img src="assets/student-demo.svg" alt="Student performance analysis dashboard preview" />
-              <a class="project-overlay" href="#contact">VIEW PROJECT <span aria-hidden="true">&#8599;</span></a>
-            </div>
-
-            <div class="project-copy">
-              <p class="project-number">02</p>
-              <h3>Student Performance Analysis</h3>
-              <p>
-                An interactive dashboard for exploring academic performance trends and presenting meaningful insights through data visualization.
-              </p>
-              <div class="chip-list">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>Data Analysis</span>
-                <span>Streamlit</span>
-              </div>
-              <div class="project-links">
-                <a href="#contact">Ask about project <span>↗</span></a>
-                <a href="https://github.com/Umar-Sam123/Student-Performance-Analysis" target="_blank" rel="noopener noreferrer">GitHub / Source Code <span>↗</span></a>
+               <a href="https://github.com/Umar-Sam123/HONEYPOT-DETECTION-" target="_blank">
+    GITHUB ON REQUEST ↗
+ <span>↗</span></a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="web">
             <div class="project-visual visual-grocery" aria-label="Grocery storefront visual preview">
-              <span class="project-tag">PROJECT 03</span>
+              <span class="project-tag">PROJECT 02</span>
               <div class="grocery-preview" role="img" aria-label="Illustrative grocery storefront with product categories and prices">
                 <div class="grocery-preview-bar"><span class="grocery-preview-brand">AIRWAY / MARKET</span><span>YOUR CART&nbsp; 00</span></div>
                 <div class="grocery-preview-body">
@@ -335,7 +331,7 @@
             </div>
 
             <div class="project-copy">
-              <p class="project-number">03</p>
+              <p class="project-number">02</p>
               <h3>Grocery</h3>
               <p>
                 A responsive grocery storefront for browsing products by category, searching the catalog, and managing a cart with quantity controls and a running total.
@@ -425,7 +421,7 @@
             <div class="form-row">
               <label>
                 Name
-                <input type="text" name="name" placeholder="Your name" required />
+                <input type="text" name="name" placeholder="Your name" minlength="8" required />
               </label>
               <label>
                 Email
@@ -435,12 +431,12 @@
 
             <label>
               Subject
-              <input type="text" name="subject" placeholder="Project inquiry" required />
+              <input type="text" name="subject" placeholder="Project inquiry" minlength="15" required />
             </label>
 
             <label>
               Message
-              <textarea name="message" rows="6" placeholder="Tell me about your idea..." required></textarea>
+              <textarea name="message" rows="6" placeholder="Tell me about your idea..." maxlength="200" required></textarea>
             </label>
 
             <button class="button button-primary" type="submit">Send Message</button>
@@ -453,9 +449,9 @@
                 <span>Email</span>
                 <strong>Available on request</strong>
               </a>
-              <a href="#contact">
+              <a href="https://github.com/Umar-Sam123" target="_blank" rel="noopener noreferrer">
                 <span>GitHub</span>
-                <strong>Profile available on requo
+                <strong>github.com/Umar-Sam123</strong>
               </a>
               <a href="#contact">
                 <span>LinkedIn</span>
@@ -480,7 +476,7 @@
         </div>
 
         <div class="footer-links">
-          <a href="#contact">GitHub</a>
+          <a href="https://github.com/Umar-Sam123" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="#contact">LinkedIn</a>
           <a href="assets/Mohammed-Umar-Resume.pdf" target="_blank" rel="noopener">Resume</a>
         </div>
